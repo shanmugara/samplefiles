@@ -13,16 +13,9 @@ pipeline {
 
 		stage('Test') {
 			steps {
-				step {
-					echo 'Testing..'
-				     }
-                                step {
-					cd section_1
-				     }
-				step {
-                                	helloworld.sh
-				     }
-			}
+			       sh echo 'Testing..'
+			       sh cd section_1
+                               sh ./helloworld.sh
 		}
 
 		stage('Deploy') {
