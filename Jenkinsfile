@@ -16,7 +16,7 @@ pipeline {
 			       sh "echo 'Testing..'"
 			       sh '''
                                   cd section_1
-                                  ./helloword.sh
+                                  ./helloworld.sh
                                '''
 		}
                 }
