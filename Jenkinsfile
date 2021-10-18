@@ -17,6 +17,7 @@ pipeline {
 			       sh 'cd section_1'
                                sh './helloworld.sh'
 		}
+                }
 
 		stage('Deploy') {
 			steps {
@@ -26,4 +27,3 @@ pipeline {
 
 	}
 }
-
