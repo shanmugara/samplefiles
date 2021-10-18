@@ -20,7 +20,7 @@ pipeline {
 					cd section_1
 				     }
 				step {
-                                	./helloworld.sh
+                                	helloworld.sh
 				     }
 			}
 		}
