@@ -14,8 +14,10 @@ pipeline {
 		stage('Test') {
 			steps {
 			       sh "echo 'Testing..'"
-			       sh 'cd section_1'
-                               sh 'ls -l'
+			       sh '''
+                                  cd section_1
+                                  ./helloword.sh
+                               '''
 		}
                 }
 
