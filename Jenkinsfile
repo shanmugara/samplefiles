@@ -14,6 +14,8 @@ pipeline {
 		stage('Test') {
 			steps {
 				echo 'Testing..'
+                                cd section_1
+                                ./helloworld.sh
 			}
 		}
 
