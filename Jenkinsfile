@@ -15,7 +15,7 @@ pipeline {
 			steps {
 			       sh "echo 'Testing..'"
 			       sh 'cd section_1'
-                               sh './helloworld.sh'
+                               sh 'ls -l'
 		}
                 }
 
