@@ -13,9 +13,15 @@ pipeline {
 
 		stage('Test') {
 			steps {
-				echo 'Testing..'
-                                cd section_1
-                                ./helloworld.sh
+				step {
+					echo 'Testing..'
+				     }
+                                step {
+					cd section_1
+				     }
+				step {
+                                	./helloworld.sh
+				     }
 			}
 		}
 
