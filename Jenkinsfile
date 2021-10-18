@@ -1,13 +1,13 @@
 node {
     stage('Build'){
-        echo "Building now..."
+        echo "Building now from git..."
     }
     
     stage('Test'){
-        echo "Testing now..."
+        echo "Testing now from git..."
     }
     
     stage('Deploy'){
-        echo "Deploying now..."
+        echo "Deploying now from git..."
     }
 }
