@@ -1,13 +1,28 @@
-node {
-    stage('Build'){
-        echo "Building now from git..."
-    }
-    
-    stage('Test'){
-        echo "Testing now from git..."
-    }
-    
-    stage('Deploy'){
-        echo "Deploying now from git..."
-    }
+#!/usr/bin/groovy
+// Declarative Pipeline
+pipeline {
+	agent any
+
+	stages {
+
+		stage('Build') {
+			steps {
+				echo 'Building..'
+			}
+		}
+
+		stage('Test') {
+			steps {
+				echo 'Testing..'
+			}
+		}
+
+		stage('Deploy') {
+			steps {
+				echo 'Deploying....'
+			}
+		}
+
+	}
 }
+
