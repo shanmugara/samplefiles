@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 // Declarative Pipeline
 pipeline {
-	agent lnxmaster
+	agent {label 'lnxmaster'}
 
 	stages {
 
