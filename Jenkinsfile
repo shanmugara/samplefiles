@@ -5,24 +5,15 @@ pipeline {
 
 	stages {
 
-		stage('Build') {
+		stage('Update_nl') {
 			steps {
-				echo 'Building..'
-			}
-		}
-
-		stage('Test') {
-			steps {
-			       bat "echo 'Testing..'"
+			       bat "echo 'Updating named locations..'"
 			       bat '''
                                   C:\\Python\\venv\\azgraph\\Scripts\\callgraph.exe nlconf -u -f nl_files/omegamsdn_nl_my_isp.csv 
                                '''
 		}
                 }
 
-		stage('Deploy') {
-			steps {
-				echo 'Deploying....'
 			}
 		}
 
