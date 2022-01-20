@@ -15,7 +15,7 @@ pipeline {
 			steps {
 			       bat "echo 'Testing..'"
 			       bat '''
-                                  C:\\Python\\venv\\azgraph\\Scripts nlconf -u -f omegamsdn_nl_my_isp.csv 
+                                  C:\\Python\\venv\\azgraph\\Scripts\\callgraph.exe nlconf -u -f omegamsdn_nl_my_isp.csv 
                                '''
 		}
                 }
