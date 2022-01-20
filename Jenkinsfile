@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 // Declarative Pipeline
 pipeline {
-	agent {label 'winnode1'}
+	agent {label 'winnode2'}
 
 	stages {
 
