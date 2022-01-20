@@ -13,8 +13,8 @@ pipeline {
 
 		stage('Test') {
 			steps {
-			       sh "echo 'Testing..'"
-			       sh '''
+			       bat "echo 'Testing..'"
+			       bat '''
                                   cd section_1
                                '''
 		}
