@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 // Declarative Pipeline
 pipeline {
-	agent {label 'lnxmaster'}
+	agent {label 'winnode1'}
 
 	stages {
 
@@ -16,7 +16,6 @@ pipeline {
 			       sh "echo 'Testing..'"
 			       sh '''
                                   cd section_1
-                                  ./helloworld.sh
                                '''
 		}
                 }
