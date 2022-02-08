@@ -1,0 +1,49 @@
+{
+    "displayName": "session_timer",
+    "state": "enabled",
+    "grantControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [
+                "bab4c994-e38b-4921-b3a8-2006e5c5c567"
+            ],
+            "excludeUsers": [],
+            "includeGroups": [],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": []
+        }
+    },
+    "sessionControls": {
+        "disableResilienceDefaults": false,
+        "applicationEnforcedRestrictions": null,
+        "cloudAppSecurity": null,
+        "persistentBrowser": null,
+        "continuousAccessEvaluation": null,
+        "signInFrequency": {
+            "value": 1,
+            "type": "hours",
+            "isEnabled": true
+        }
+    }
+}
